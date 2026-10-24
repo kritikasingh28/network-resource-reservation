@@ -125,6 +125,8 @@ def main():
     p.add_argument("--capacity", type=float, default=10.0,
                    help="reservable link capacity in Mbps")
     p.add_argument("--log", default=None, help="CSV file for the event log")
+    p.add_argument("--samples", default=None,
+                   help="CSV file: utilization sampled every second")
     p.add_argument("--controller", default=None,
                    help="Ryu REST URL, e.g. http://127.0.0.1:8080 "
                         "(leave out to run without an SDN controller)")
@@ -139,6 +141,8 @@ def main():
     manager = ResourceManager(capacity_mbps=args.capacity, policy=policy,
                               log_path=args.log)
     manager.start_expiry_thread()
+    if args.samples:
+        manager.start_sampler(args.samples)
     server = ReservationServer(manager, args.host, args.port)
     port = server.start()
     print("Reservation server listening on %s:%d (capacity %.1f Mbps)"

@@ -231,5 +231,26 @@ class ResourceManager:
         self._expiry_thread = threading.Thread(target=loop, daemon=True)
         self._expiry_thread.start()
 
+        # ------------------------------------------------------------------
+    # utilization tracking: write one row every `interval_s` seconds
+    # ------------------------------------------------------------------
+    def start_sampler(self, path, interval_s=1.0):
+        t0 = time.time()
+        with open(path, "w", newline="") as f:
+            csv.writer(f).writerow(["time", "elapsed_s", "used_mbps",
+                                    "utilization_pct", "active_reservations"])
+
+        def loop():
+            while not self._stop_event.wait(interval_s):
+                with self.lock:
+                    used = self._used()
+                    active = len(self.reservations)
+                with open(path, "a", newline="") as f:
+                    csv.writer(f).writerow([
+                        "%.3f" % time.time(), "%.1f" % (time.time() - t0),
+                        "%.2f" % used, "%.1f" % (100.0 * used / self.capacity),
+                        active])
+        threading.Thread(target=loop, daemon=True).start()
+
     def stop(self):
         self._stop_event.set()
