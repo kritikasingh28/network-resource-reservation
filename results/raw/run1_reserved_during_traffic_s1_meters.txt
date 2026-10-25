@@ -1,0 +1,6 @@
+OFPST_METER_CONFIG reply (OF1.3) (xid=0x2):
+meter=1 kbps burst bands=
+type=drop rate=4000 burst_size=400
+
+meter=4000000 kbps burst bands=
+type=drop rate=6000 burst_size=600

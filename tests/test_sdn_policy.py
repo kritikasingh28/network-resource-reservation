@@ -73,6 +73,13 @@ class TestControllerPolicy(unittest.TestCase):
         self.assertEqual(r["status"], "ACCEPTED")
         self.assertEqual(self.fake.requests, [("POST", "/policy", {
             "id": r["id"], "src": "10.0.0.1", "dst": "10.0.0.3", "bandwidth_mbps": 4.0})])
+    def test_capacity_is_sent_when_configured(self):
+        m = ResourceManager(10.0, policy=ControllerPolicy(self.fake.url, verbose=False,
+                                                          capacity_mbps=10.0))
+        r = m.reserve("10.0.0.1", "10.0.0.3", 4, 60)
+        self.assertEqual(self.fake.requests[-1][2]["capacity_mbps"], 10.0)
+        self.assertEqual(r["status"], "ACCEPTED")
+
 
     def test_release_sends_delete(self):
         rid = self.m.reserve("10.0.0.1", "10.0.0.3", 4, 60)["id"]

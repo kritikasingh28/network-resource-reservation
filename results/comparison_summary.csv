@@ -1,0 +1,3 @@
+mode,runs,reserved_mean_mbps,reserved_min_mbps,reserved_loss_mean_pct,greedy_mean_mbps
+baseline,3,3.94,3.94,0.00,5.72
+reserved,3,3.86,3.84,1.87,5.76

@@ -1,0 +1,2 @@
+capacity_mbps,accepted_total,server_used_mbps,s1_reserved_meter_mbps,s2_reserved_meter_mbps,no_overbooking,meters_left_after_expiry,server_used_after_mbps
+10.0,44,9.7,9.7,9.7,PASS,0,0

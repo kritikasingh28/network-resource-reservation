@@ -17,7 +17,9 @@ import urllib.request
 
 
 class ControllerPolicy:
-    def __init__(self, base_url="http://127.0.0.1:8080", timeout=3.0, verbose=True):
+    def __init__(self, base_url="http://127.0.0.1:8080", timeout=3.0, verbose=True,
+                 capacity_mbps=None):
+        self.capacity_mbps = capacity_mbps   # sent so the controller can cap unreserved traffic
         self.base_url = base_url.rstrip("/")
         self.timeout = timeout
         self.verbose = verbose
@@ -47,9 +49,11 @@ class ControllerPolicy:
 
     def install(self, res):
         """Ask the controller to install the rate-limit rule. True = success."""
-        status, body = self._call("POST", "/policy", {
-            "id": res["id"], "src": res["src"], "dst": res["dst"],
-            "bandwidth_mbps": res["bandwidth_mbps"]})
+        payload = {"id": res["id"], "src": res["src"], "dst": res["dst"],
+                   "bandwidth_mbps": res["bandwidth_mbps"]}
+        if self.capacity_mbps is not None:
+            payload["capacity_mbps"] = self.capacity_mbps
+        status, body = self._call("POST", "/policy", payload)
         ok = (status == 200 and body.get("status") == "ok")
         self._say("install id=%s %s -> %s %.2f Mbps : %s"
                   % (res["id"], res["src"], res["dst"], res["bandwidth_mbps"],

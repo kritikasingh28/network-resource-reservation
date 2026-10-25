@@ -1,0 +1,16 @@
+{
+  "status": "OK",
+  "capacity_mbps": 10.0,
+  "used_mbps": 0,
+  "available_mbps": 10.0,
+  "utilization_pct": 0.0,
+  "active_reservations": 0,
+  "accepted": 44,
+  "rejected": 74,
+  "released": 3,
+  "expired": 41,
+  "rejected_reasons": {
+    "INSUFFICIENT_BANDWIDTH": 51,
+    "DUPLICATE_FLOW": 23
+  }
+}

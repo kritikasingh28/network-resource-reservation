@@ -1,0 +1,18 @@
+OFPST_METER_CONFIG reply (OF1.3) (xid=0x2):
+meter=41 kbps burst bands=
+type=drop rate=1200 burst_size=120
+
+meter=43 kbps burst bands=
+type=drop rate=2300 burst_size=230
+
+meter=42 kbps burst bands=
+type=drop rate=1800 burst_size=180
+
+meter=44 kbps burst bands=
+type=drop rate=2200 burst_size=220
+
+meter=4000000 kbps burst bands=
+type=drop rate=300 burst_size=100
+
+meter=40 kbps burst bands=
+type=drop rate=2200 burst_size=220

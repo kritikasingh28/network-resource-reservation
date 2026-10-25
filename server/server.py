@@ -133,7 +133,7 @@ def main():
     args = p.parse_args()
 
     if args.controller:
-        policy = ControllerPolicy(args.controller)
+        policy = ControllerPolicy(args.controller, capacity_mbps=args.capacity)
         print("SDN policies will be sent to %s" % args.controller)
     else:
         policy = NullPolicy()
