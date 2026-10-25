@@ -2,17 +2,16 @@
 Server listening on UDP port 5001
 UDP buffer size:  208 KByte (default)
 ------------------------------------------------------------
-[  1] local 10.0.0.3 port 5001 connected with 10.0.0.1 port 50300
+[  1] local 10.0.0.3 port 5001 connected with 10.0.0.1 port 38325
 [ ID] Interval       Transfer     Bandwidth        Jitter   Lost/Total Datagrams
-[  1] 0.0000-1.0000 sec  0.443 MBytes  3.72 Mbits/sec   0.587 ms 0/316 (0%)
-[  1] 1.0000-2.0000 sec  0.468 MBytes  3.93 Mbits/sec   0.561 ms 0/334 (0%)
-[  1] 2.0000-3.0000 sec  0.468 MBytes  3.93 Mbits/sec   0.550 ms 0/334 (0%)
-[  1] 3.0000-4.0000 sec  0.470 MBytes  3.94 Mbits/sec   0.613 ms 0/335 (0%)
-[  1] 4.0000-5.0000 sec  0.463 MBytes  3.88 Mbits/sec   0.603 ms 8/338 (2.4%)
-[  1] 5.0000-6.0000 sec  0.463 MBytes  3.88 Mbits/sec   0.612 ms 8/338 (2.4%)
-[  1] 6.0000-7.0000 sec  0.464 MBytes  3.89 Mbits/sec   0.627 ms 8/339 (2.4%)
-[  1] 7.0000-8.0000 sec  0.463 MBytes  3.88 Mbits/sec   0.601 ms 8/338 (2.4%)
-[  1] 8.0000-9.0000 sec  0.461 MBytes  3.87 Mbits/sec   0.574 ms 9/338 (2.7%)
-[  1] 9.0000-10.0000 sec  0.464 MBytes  3.89 Mbits/sec   0.580 ms 8/339 (2.4%)
-[  1] 0.0000-10.1217 sec  4.68 MBytes  3.88 Mbits/sec   0.627 ms 50/3391 (1.5%)
-[  5] WARNING: ack of last datagram failed.
+[  1] 0.0000-1.0000 sec  0.412 MBytes  3.46 Mbits/sec   0.546 ms 0/294 (0%)
+[  1] 1.0000-2.0000 sec  0.436 MBytes  3.66 Mbits/sec   0.601 ms 0/311 (0%)
+[  1] 2.0000-3.0000 sec  0.428 MBytes  3.59 Mbits/sec   0.255 ms 0/305 (0%)
+[  1] 3.0000-4.0000 sec  0.425 MBytes  3.56 Mbits/sec   0.301 ms 0/303 (0%)
+[  1] 4.0000-5.0000 sec  0.407 MBytes  3.41 Mbits/sec   2.362 ms 0/290 (0%)
+[  1] 5.0000-6.0000 sec  0.430 MBytes  3.61 Mbits/sec   0.460 ms 0/307 (0%)
+[  1] 6.0000-7.0000 sec  0.437 MBytes  3.67 Mbits/sec   0.524 ms 0/312 (0%)
+[  1] 7.0000-8.0000 sec  0.426 MBytes  3.58 Mbits/sec   0.244 ms 0/304 (0%)
+[  1] 8.0000-9.0000 sec  0.425 MBytes  3.56 Mbits/sec   0.347 ms 0/303 (0%)
+[  1] 9.0000-10.0000 sec  0.425 MBytes  3.56 Mbits/sec   0.367 ms 0/303 (0%)
+[  1] 0.0000-10.0017 sec  4.25 MBytes  3.57 Mbits/sec   0.480 ms 0/3033 (0%)

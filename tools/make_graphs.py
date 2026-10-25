@@ -72,7 +72,7 @@ def fig_comparison(res, outdir, target):
 
     fig, axes = plt.subplots(1, 2, figsize=(10, 4.4))
     for ax, key, title in ((axes[0], "r", "Reserved stream (h1 to h3)"),
-                           (axes[1], "g", "Greedy stream (h2 to h4)")):
+                           (axes[1], "g", "Greedy streams (h2 to h4, total)")):
         for i, (m, label, col) in enumerate(modes):
             vals = [v for v in by[m][key] if v is not None]
             if not vals:
@@ -81,9 +81,6 @@ def fig_comparison(res, outdir, target):
             ax.bar(i, mean, width=0.55, color=col, label=label)
             ax.scatter([i] * len(vals), vals, color=INK, s=14, zorder=3)
             txt = "%.2f Mbps" % mean
-            if key == "r" and by[m]["loss"] and by[m]["loss"][0] is not None:
-                txt += "\nloss %.1f%%" % statistics.mean(
-                    v for v in by[m]["loss"] if v is not None)
             ax.text(i, mean / 2.0, txt, ha="center", va="center", fontsize=11,
                     color="white", fontweight="bold")
         ax.set_xticks([0, 1])
@@ -93,7 +90,7 @@ def fig_comparison(res, outdir, target):
         ax.set_title(title)
         ax.grid(axis="x", visible=False)
     axes[0].axhline(target, color=INK2, linestyle="--", linewidth=1.2)
-    axes[0].text(-0.38, target + 0.2, "dashed line: %.1f Mbps sent" % target,
+    axes[0].text(-0.38, target + 0.2, "dashed line: sender set to iperf -b %.1fM" % target,
                  ha="left", fontsize=9, color=INK2)
     axes[0].legend(loc="upper left")
     fig.suptitle("Effect of a 4 Mbps reservation on a shared 10 Mbps link "
@@ -126,7 +123,7 @@ def fig_timeseries(res, outdir, target):
         data[(r["stream"], r["mode"])][int(r["second"])].append(float(r["mbps"]))
     fig, axes = plt.subplots(1, 2, figsize=(10, 4.2), sharey=True)
     for ax, stream, title in ((axes[0], "reserved_stream", "Reserved stream (h1 to h3)"),
-                              (axes[1], "greedy_stream", "Greedy stream (h2 to h4)")):
+                              (axes[1], "greedy_stream", "Greedy streams (h2 to h4, total)")):
         for mode, label, col in (("baseline", "No reservation", BASELINE),
                                  ("reserved", "With reservation", RESERVED)):
             d = data.get((stream, mode))
@@ -211,7 +208,7 @@ def fig_utilization(res, outdir):
 def main():
     p = argparse.ArgumentParser()
     p.add_argument("--results", default=os.path.join(os.path.dirname(__file__), "..", "results"))
-    p.add_argument("--target", type=float, default=3.8,
+    p.add_argument("--target", type=float, default=3.4,
                    help="Mbps the reserved UDP stream sends (dashed line)")
     a = p.parse_args()
     res = os.path.abspath(a.results)

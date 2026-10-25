@@ -2,17 +2,18 @@
 Server listening on UDP port 5001
 UDP buffer size:  208 KByte (default)
 ------------------------------------------------------------
-[  1] local 10.0.0.3 port 5001 connected with 10.0.0.1 port 60409
+[  1] local 10.0.0.3 port 5001 connected with 10.0.0.1 port 48658
 [ ID] Interval       Transfer     Bandwidth        Jitter   Lost/Total Datagrams
-[  1] 0.0000-1.0000 sec  0.428 MBytes  3.59 Mbits/sec   2.206 ms 0/305 (0%)
-[  1] 1.0000-2.0000 sec  0.467 MBytes  3.92 Mbits/sec   2.808 ms 0/333 (0%)
-[  1] 2.0000-3.0000 sec  0.474 MBytes  3.97 Mbits/sec   2.664 ms 0/338 (0%)
-[  1] 3.0000-4.0000 sec  0.465 MBytes  3.90 Mbits/sec   3.605 ms 0/332 (0%)
-[  1] 4.0000-5.0000 sec  0.467 MBytes  3.92 Mbits/sec   1.543 ms 0/333 (0%)
-[  1] 5.0000-6.0000 sec  0.489 MBytes  4.10 Mbits/sec   3.099 ms 0/349 (0%)
-[  1] 6.0000-7.0000 sec  0.486 MBytes  4.08 Mbits/sec   2.154 ms 0/347 (0%)
-[  1] 7.0000-8.0000 sec  0.472 MBytes  3.96 Mbits/sec   2.258 ms 0/337 (0%)
-[  1] 8.0000-9.0000 sec  0.464 MBytes  3.89 Mbits/sec   2.946 ms 0/331 (0%)
-[  1] 9.0000-10.0000 sec  0.472 MBytes  3.96 Mbits/sec   3.779 ms 0/337 (0%)
-[  1] 0.0000-10.1269 sec  4.75 MBytes  3.94 Mbits/sec   2.928 ms 0/3390 (0%)
+[  1] 0.0000-1.0000 sec  0.216 MBytes  1.81 Mbits/sec   2.206 ms 0/154 (0%)
+[  1] 1.0000-2.0000 sec  0.202 MBytes  1.69 Mbits/sec   3.009 ms 0/144 (0%)
+[  1] 2.0000-3.0000 sec  0.248 MBytes  2.08 Mbits/sec   3.764 ms 0/177 (0%)
+[  1] 3.0000-4.0000 sec  0.219 MBytes  1.83 Mbits/sec   2.861 ms 0/156 (0%)
+[  1] 4.0000-5.0000 sec  0.198 MBytes  1.66 Mbits/sec   3.142 ms 0/141 (0%)
+[  1] 5.0000-6.0000 sec  0.251 MBytes  2.11 Mbits/sec   2.580 ms 0/179 (0%)
+[  1] 6.0000-7.0000 sec  0.257 MBytes  2.15 Mbits/sec   3.826 ms 0/183 (0%)
+[  1] 7.0000-8.0000 sec  0.230 MBytes  1.93 Mbits/sec   2.950 ms 0/164 (0%)
+[  1] 8.0000-9.0000 sec  0.202 MBytes  1.69 Mbits/sec   2.996 ms 0/144 (0%)
+[  1] 9.0000-10.0000 sec  0.259 MBytes  2.18 Mbits/sec   2.541 ms 0/185 (0%)
+[  1] 10.0000-10.3685 sec  0.077 MBytes  1.76 Mbits/sec  23.254 ms 0/55 (0%)
+[  1] 0.0000-10.3685 sec  2.36 MBytes  1.91 Mbits/sec  10.501 ms 0/1682 (0%)
 [  5] WARNING: ack of last datagram failed.

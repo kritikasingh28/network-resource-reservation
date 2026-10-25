@@ -1,0 +1,17 @@
+------------------------------------------------------------
+Server listening on UDP port 5003
+UDP buffer size:  208 KByte (default)
+------------------------------------------------------------
+[  1] local 10.0.0.4 port 5003 connected with 10.0.0.2 port 43177
+[ ID] Interval       Transfer     Bandwidth        Jitter   Lost/Total Datagrams
+[  1] 0.0000-1.0000 sec  0.139 MBytes  1.16 Mbits/sec   0.659 ms 329/428 (77%)
+[  1] 1.0000-2.0000 sec  0.119 MBytes  1.00 Mbits/sec   0.751 ms 375/460 (82%)
+[  1] 2.0000-3.0000 sec  0.098 MBytes  0.823 Mbits/sec   0.174 ms 376/446 (84%)
+[  1] 3.0000-4.0000 sec  0.111 MBytes  0.929 Mbits/sec   0.055 ms 365/444 (82%)
+[  1] 4.0000-5.0000 sec  0.115 MBytes  0.964 Mbits/sec   0.210 ms 362/444 (82%)
+[  1] 5.0000-6.0000 sec  0.109 MBytes  0.917 Mbits/sec   0.223 ms 375/453 (83%)
+[  1] 6.0000-7.0000 sec  0.114 MBytes  0.953 Mbits/sec   0.016 ms 362/443 (82%)
+[  1] 7.0000-8.0000 sec  0.139 MBytes  1.16 Mbits/sec   0.066 ms 346/445 (78%)
+[  1] 8.0000-9.0000 sec  0.111 MBytes  0.929 Mbits/sec   0.025 ms 366/445 (82%)
+[  1] 9.0000-10.0000 sec  0.108 MBytes  0.906 Mbits/sec   0.037 ms 373/450 (83%)
+[  1] 0.0000-10.0026 sec  1.16 MBytes  0.976 Mbits/sec   0.362 ms 3630/4460 (81%)

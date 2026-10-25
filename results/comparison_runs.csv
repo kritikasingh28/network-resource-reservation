@@ -1,7 +1,7 @@
 run,mode,reserved_mbps,reserved_loss_pct,greedy_mbps,greedy_loss_pct
-1,baseline,3.94,0.0,5.71,0.0
-1,reserved,3.86,1.5,5.8,44.0
-2,baseline,3.94,0.0,5.72,0.0
-2,reserved,3.84,2.6,5.66,9.0
-3,baseline,3.94,0.0,5.74,0.0
-3,reserved,3.88,1.5,5.82,44.0
+1,baseline,1.88,0.0,7.73,0.0
+1,reserved,3.57,0.0,5.901000000000001,72.0
+2,baseline,1.9,0.0,7.73,0.0
+2,reserved,3.57,0.0,5.885999999999999,71.75
+3,baseline,1.91,0.0,7.74,0.0
+3,reserved,3.57,0.0,5.895,71.75

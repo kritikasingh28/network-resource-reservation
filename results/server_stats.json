@@ -5,12 +5,9 @@
   "available_mbps": 10.0,
   "utilization_pct": 0.0,
   "active_reservations": 0,
-  "accepted": 44,
-  "rejected": 74,
+  "accepted": 3,
+  "rejected": 0,
   "released": 3,
-  "expired": 41,
-  "rejected_reasons": {
-    "INSUFFICIENT_BANDWIDTH": 51,
-    "DUPLICATE_FLOW": 23
-  }
+  "expired": 0,
+  "rejected_reasons": {}
 }

@@ -1,0 +1,19 @@
+------------------------------------------------------------
+Server listening on UDP port 5005
+UDP buffer size:  208 KByte (default)
+------------------------------------------------------------
+[  1] local 10.0.0.4 port 5005 connected with 10.0.0.2 port 56608
+[ ID] Interval       Transfer     Bandwidth        Jitter   Lost/Total Datagrams
+[  1] 0.0000-1.0000 sec  0.216 MBytes  1.81 Mbits/sec   3.252 ms 0/154 (0%)
+[  1] 1.0000-2.0000 sec  0.236 MBytes  1.98 Mbits/sec   7.648 ms 0/168 (0%)
+[  1] 2.0000-3.0000 sec  0.227 MBytes  1.91 Mbits/sec   3.669 ms 0/162 (0%)
+[  1] 3.0000-4.0000 sec  0.262 MBytes  2.20 Mbits/sec   1.268 ms 0/187 (0%)
+[  1] 4.0000-5.0000 sec  0.202 MBytes  1.69 Mbits/sec   3.101 ms 0/144 (0%)
+[  1] 5.0000-6.0000 sec  0.265 MBytes  2.22 Mbits/sec   2.697 ms 0/189 (0%)
+[  1] 6.0000-7.0000 sec  0.198 MBytes  1.66 Mbits/sec   2.993 ms 0/141 (0%)
+[  1] 7.0000-8.0000 sec  0.198 MBytes  1.66 Mbits/sec   2.555 ms 0/141 (0%)
+[  1] 8.0000-9.0000 sec  0.286 MBytes  2.40 Mbits/sec   1.836 ms 0/204 (0%)
+[  1] 9.0000-10.0000 sec  0.175 MBytes  1.47 Mbits/sec   3.652 ms 0/125 (0%)
+[  1] 10.0000-10.3044 sec  0.070 MBytes  1.93 Mbits/sec  34.711 ms 0/50 (0%)
+[  1] 0.0000-10.3044 sec  2.33 MBytes  1.90 Mbits/sec  10.348 ms 0/1665 (0%)
+[  5] WARNING: ack of last datagram failed.

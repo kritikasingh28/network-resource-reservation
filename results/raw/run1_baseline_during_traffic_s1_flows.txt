@@ -1,12 +1,12 @@
 OFPST_FLOW reply (OF1.3) (xid=0x2):
- cookie=0x0, duration=5.287s, table=0, n_packets=2, n_bytes=196, priority=1,in_port=2,dl_src=00:00:00:00:00:02,dl_dst=00:00:00:00:00:01 actions=output:1
- cookie=0x0, duration=5.285s, table=0, n_packets=1, n_bytes=98, priority=1,in_port=1,dl_src=00:00:00:00:00:01,dl_dst=00:00:00:00:00:02 actions=output:2
- cookie=0x0, duration=5.266s, table=0, n_packets=2, n_bytes=196, priority=1,in_port=3,dl_src=00:00:00:00:00:03,dl_dst=00:00:00:00:00:01 actions=output:1
- cookie=0x0, duration=5.264s, table=0, n_packets=1334, n_bytes=2015594, priority=1,in_port=1,dl_src=00:00:00:00:00:01,dl_dst=00:00:00:00:00:03 actions=output:3
- cookie=0x0, duration=5.238s, table=0, n_packets=2, n_bytes=196, priority=1,in_port=3,dl_src=00:00:00:00:00:04,dl_dst=00:00:00:00:00:01 actions=output:1
- cookie=0x0, duration=5.236s, table=0, n_packets=1, n_bytes=98, priority=1,in_port=1,dl_src=00:00:00:00:00:01,dl_dst=00:00:00:00:00:04 actions=output:3
- cookie=0x0, duration=5.209s, table=0, n_packets=2, n_bytes=196, priority=1,in_port=3,dl_src=00:00:00:00:00:03,dl_dst=00:00:00:00:00:02 actions=output:2
- cookie=0x0, duration=5.199s, table=0, n_packets=1, n_bytes=98, priority=1,in_port=2,dl_src=00:00:00:00:00:02,dl_dst=00:00:00:00:00:03 actions=output:3
- cookie=0x0, duration=5.162s, table=0, n_packets=2, n_bytes=196, priority=1,in_port=3,dl_src=00:00:00:00:00:04,dl_dst=00:00:00:00:00:02 actions=output:2
- cookie=0x0, duration=5.160s, table=0, n_packets=1996, n_bytes=3016538, priority=1,in_port=2,dl_src=00:00:00:00:00:02,dl_dst=00:00:00:00:00:04 actions=output:3
- cookie=0x0, duration=6.352s, table=0, n_packets=77, n_bytes=8428, priority=0 actions=CONTROLLER:65535
+ cookie=0x0, duration=5.439s, table=0, n_packets=3, n_bytes=238, priority=1,in_port=2,dl_src=00:00:00:00:00:02,dl_dst=00:00:00:00:00:01 actions=output:1
+ cookie=0x0, duration=5.437s, table=0, n_packets=2, n_bytes=140, priority=1,in_port=1,dl_src=00:00:00:00:00:01,dl_dst=00:00:00:00:00:02 actions=output:2
+ cookie=0x0, duration=5.412s, table=0, n_packets=3, n_bytes=238, priority=1,in_port=3,dl_src=00:00:00:00:00:03,dl_dst=00:00:00:00:00:01 actions=output:1
+ cookie=0x0, duration=5.410s, table=0, n_packets=676, n_bytes=1019228, priority=1,in_port=1,dl_src=00:00:00:00:00:01,dl_dst=00:00:00:00:00:03 actions=output:3
+ cookie=0x0, duration=5.366s, table=0, n_packets=3, n_bytes=238, priority=1,in_port=3,dl_src=00:00:00:00:00:04,dl_dst=00:00:00:00:00:01 actions=output:1
+ cookie=0x0, duration=5.352s, table=0, n_packets=2, n_bytes=140, priority=1,in_port=1,dl_src=00:00:00:00:00:01,dl_dst=00:00:00:00:00:04 actions=output:3
+ cookie=0x0, duration=5.262s, table=0, n_packets=2, n_bytes=196, priority=1,in_port=3,dl_src=00:00:00:00:00:03,dl_dst=00:00:00:00:00:02 actions=output:2
+ cookie=0x0, duration=5.246s, table=0, n_packets=1, n_bytes=98, priority=1,in_port=2,dl_src=00:00:00:00:00:02,dl_dst=00:00:00:00:00:03 actions=output:3
+ cookie=0x0, duration=5.205s, table=0, n_packets=2, n_bytes=196, priority=1,in_port=3,dl_src=00:00:00:00:00:04,dl_dst=00:00:00:00:00:02 actions=output:2
+ cookie=0x0, duration=5.197s, table=0, n_packets=2880, n_bytes=4353146, priority=1,in_port=2,dl_src=00:00:00:00:00:02,dl_dst=00:00:00:00:00:04 actions=output:3
+ cookie=0x0, duration=6.667s, table=0, n_packets=83, n_bytes=9005, priority=0 actions=CONTROLLER:65535
